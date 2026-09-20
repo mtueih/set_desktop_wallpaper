@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
-	if (set_desktop_wallpaper(argv[1])) {
+	if (!set_desktop_wallpaper(argv[1])) {
 		fprintf(stderr, "Failed to set desktop wallpaper!\n");
 		return 1;
 	}
