@@ -6,7 +6,7 @@ on:
     paths: &ci_paths
       - 'include/**'
       - 'src/**'
-      - 'cli/'
+      - 'cli/**'
       - 'CMakeLists.txt'
       - '.github/workflows/ci.yml'
   pull_request:
