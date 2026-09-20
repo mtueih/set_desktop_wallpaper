@@ -7,6 +7,9 @@ endif ()
 set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
+if(MSVC)
+	add_compile_options(/std:c17)
+endif()
 
 # lib
 set(SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_TARGET_NAME ${PROJECT_NAME})
