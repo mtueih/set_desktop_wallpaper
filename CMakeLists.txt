@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(set_desktop_wallpaper VERSION 0.1.0 LANGUAGES C)
+project(set_desktop_wallpaper VERSION 0.2.0 LANGUAGES C)
 
 if (NOT CMAKE_C_STANDARD)
 	set(CMAKE_C_STANDARD 99)
@@ -18,17 +18,17 @@ if (WIN32)
 	)
 else ()
 	message(FATAL_ERROR
-		"Unsupported platform: ${CMAKE_SYSTEM_NAME}\n"
-		"Supported: Windows"
+		"Unsupported platform: ${CMAKE_SYSTEM_NAME}.\n"
+		"Supported: Windows."
 	)
 endif ()
 
 add_library(${SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_TARGET_NAME}
 	STATIC ${SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_SOURCE_LIST})
+add_library(${SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_TARGET_NAME}::${SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_TARGET_NAME}
+	ALIAS ${SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_TARGET_NAME})
 target_include_directories(${SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_TARGET_NAME}
 	PUBLIC include)
-target_compile_definitions(${SET_LOCKSCREEN_WALLPAPER_MAIN_LIB_TARGET_NAME}
-	PRIVATE $<$<CONFIG:Debug>:DEBUG>)
 
 
 # cli

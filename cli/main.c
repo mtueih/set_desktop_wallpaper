@@ -3,7 +3,7 @@
 
 int main(int argc, char *argv[]) {
 	if (argc < 2) {
-		fprintf(stderr, "Usage: %s [image_file_path]\n", argv[0]);
+		fprintf(stderr, "Usage: %s [image_file_path].\n", argv[0]);
 		return 1;
 	}
 
@@ -12,6 +12,6 @@ int main(int argc, char *argv[]) {
 		return 1;
 	}
 
-	printf("Desktop Wallpaper Successfully Set\n");
+	printf("Desktop Wallpaper Successfully Set.\n");
 	return 0;
 }
