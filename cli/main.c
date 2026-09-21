@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "set_desktop_wallpaper.h"
+#include "mtueih/set_desktop_wallpaper.h"
+
 
 int main(int argc, char *argv[]) {
 	if (argc < 2) {
