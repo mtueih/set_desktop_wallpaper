@@ -27,6 +27,7 @@ add_library(${MAIN_LIB_TARGET_NAME} STATIC ${MAIN_LIB_SOURCE_LIST})
 add_library(mtueih::${MAIN_LIB_TARGET_NAME} ALIAS ${MAIN_LIB_TARGET_NAME})
 
 target_include_directories(${MAIN_LIB_TARGET_NAME} PUBLIC include)
+target_compile_definitions(${MAIN_LIB_TARGET_NAME} PRIVATE $<$<CONFIG:Debug>:DEBUG>)
 
 
 # cli.
