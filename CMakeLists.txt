@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(set_desktop_wallpaper VERSION 0.1.0 LANGUAGES C)
+project(set_desktop_wallpaper VERSION 0.2.0 LANGUAGES C)
 
 if(NOT CMAKE_C_STANDARD)
     set(CMAKE_C_STANDARD 99)
