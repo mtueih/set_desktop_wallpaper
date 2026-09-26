@@ -5,7 +5,7 @@
 #include <stddef.h>
 
 #ifdef __cplusplus
-namespace mtueih
+namespace set_desktop_wallpaper
 {
 	extern "C"
 	{

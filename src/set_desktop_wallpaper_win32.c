@@ -1,4 +1,4 @@
-#include "mtueih/set_desktop_wallpaper.h"
+#include "set_desktop_wallpaper/set_desktop_wallpaper.h"
 #include <windows.h>
 
 #ifdef DEBUG
@@ -17,7 +17,7 @@ bool set_desktop_wallpaper(const char *const image_file_path)
 #ifdef DEBUG
 		const DWORD err_code = GetLastError();
 		fprintf(
-			stderr, "[%s | %s]: [Error]: SystemParametersInfoA failed with error %lu\n",
+			stderr, "[%s | %s]: [Error]: SystemParametersInfoA() failed with error %lu\n",
 			__FILE__, __func__, err_code);
 #endif
 		return false;
@@ -38,7 +38,7 @@ bool set_desktop_wallpaper_w(const wchar_t *const image_file_path)
 #ifdef DEBUG
 		const DWORD err_code = GetLastError();
 		fprintf(
-			stderr, "[%s | %s]: [Error]: SystemParametersInfoW failed with error %lu\n",
+			stderr, "[%s | %s]: [Error]: SystemParametersInfoW() failed with error %lu\n",
 			__FILE__, __func__, err_code);
 #endif
 		return false;

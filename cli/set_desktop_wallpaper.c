@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "mtueih/set_desktop_wallpaper.h"
+#include "set_desktop_wallpaper/set_desktop_wallpaper.h"
 
 int main(int argc, char *argv[])
 {
 	if (argc < 2)
 	{
-		fprintf(stderr, "Usage: %s [image_file_path].\n", argv[0]);
+		fprintf(stderr, "Usage: %s <image_file_path>\n", argv[0]);
 		return 1;
 	}
 
