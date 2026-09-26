@@ -7,7 +7,7 @@
 [![CI](https://github.com/mtueih/set_desktop_wallpaper/actions/workflows/ci.yml/badge.svg)](https://github.com/mtueih/set_desktop_wallpaper/actions/workflows/ci.yml)
 [![CD](https://github.com/mtueih/set_desktop_wallpaper/actions/workflows/cd.yml/badge.svg)](https://github.com/mtueih/set_desktop_wallpaper/actions/workflows/cd.yml)
 
-一个用于以隐藏窗口方式启动外部进程的轻量级 C 库。
+一个用于设置系统桌面壁纸的轻量级 C 库。
 
 目前只支持 Windows 平台。
 
