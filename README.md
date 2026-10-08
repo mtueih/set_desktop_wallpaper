@@ -93,7 +93,7 @@ target_link_libraries(your_target PRIVATE set_desktop_wallpaper::set_desktop_wal
 
 #### 引入头文件
 
-```cpp
+```c
 #include <set_desktop_wallpaper/set_desktop_wallpaper.h>
 ```
 
@@ -103,12 +103,6 @@ target_link_libraries(your_target PRIVATE set_desktop_wallpaper::set_desktop_wal
 
 ```c
 set_desktop_wallpaper("C:\\Users\\mtueih\\Pictures\\wallhaven-e82xxr.jpg");
-```
-
-在 C++ 代码中：
-
-```cpp
-set_desktop_wallpaper::set_desktop_wallpaper("C:\\Users\\mtueih\\Pictures\\wallhaven-e82xxr.jpg");
 ```
 
 ## 从源码构建
